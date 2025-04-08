@@ -1,14 +1,14 @@
-// Checking if a number is prime
+// Checking if a number a sum of two prime numbers
 #include <stdio.h>
-#include <stdbool.h>
 
-bool isprime(int n);
+int isprime(int n);
+int isprisum(int n);
 
-int main() {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
+int main () {
+	int n = 0;
+	printf("Enter a number: ");
+	scanf("%d", &n);
 
-    printf("Number is prime: %d\n", isprime(n));
-    return 0;
+	printf("The number %d %s be represented by sum of two prime numbers\n", n, isprisum(n) ? "can" : "can't");
+	return 0;
 }
